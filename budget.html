@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyir Foundation - Budget Display</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="budget.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-centered">
+                <img src="logo.png" alt="Uyir Foundation Logo" />
+            </div>
+            <h1>Uyir Foundation</h1>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events & Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li><a href="budget.html">Budget Display</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="budget-section">
+        <h1>Budget Management</h1>
+        <form id="budget-form">
+            <input type="text" id="category-input" placeholder="Category Name" required><br>
+            <input type="number" id="budget-input" placeholder="Budget Amount" required><br>
+            <input type="number" id="profit-input" placeholder="Profit Amount" required><br>
+            <button type="submit" class="cta-button">Add to Budget</button>
+        </form>
+
+        <div id="budget-display">
+            <h2>Budget Overview</h2>
+            <table id="budget-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Budget</th>
+                        <th>Profit</th>
+                    </tr>
+                </thead>
+                <tbody id="budget-list"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Uyir Foundation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
