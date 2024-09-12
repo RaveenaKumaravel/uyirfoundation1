@@ -332,3 +332,17 @@ footer {
 #budget-list tr:nth-child(even) {
     background-color: #f1f1f1;
 }
+
+/* Remove button */
+.remove-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #c0392b;
+}
